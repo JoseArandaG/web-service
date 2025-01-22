@@ -1,8 +1,8 @@
 import { ObjectId } from "mongodb";
 import client from "../common/db.js";
-import { Pelicula } from "./pelicula";
+import { Pelicula } from "./pelicula.js";
 
-const peliculasCollection = client.db('').collection('peliculas')
+const peliculasCollection = client.db('leasing').collection('peliculas')
 
 async function handleInsertPeliculaRequest(req,res) {
     let data = req.body
