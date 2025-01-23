@@ -2,9 +2,9 @@ import express, {urlencoded} from "express";
 import cors from 'cors';
 
 import client from "./src/common/db.js";
-import routes from "./src/pelicula/routes.js";
+import routes from "./src/Pelicula/routes.js";
 
-const PORTS = 3000 || 4000
+const PORTS = 9000 || 4000
 const app = express()
 
 app.use(express.json())
